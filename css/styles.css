@@ -1,0 +1,186 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+/*VARIABLES*/
+:root {
+  --clr-primary: #ffd166;
+  --clr-primary-light: #7a5600;
+  --main-white: #fff;
+  --ff-primary: "catamaran", sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
+  --transition: all 0.4s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+/*global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*html*/
+html {
+  font-size: 15px;
+}
+/*body styles*/
+body {
+  font-family: var(--ff-primary);
+  overflow-x: hidden;
+}
+/*banner-content*/
+.banner-content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  letter-spacing: 0.5rem;
+}
+/*header*/
+.header {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/main-bcg.jpeg) center/cover no-repeat fixed;
+}
+/*banner h2*/
+.banner-content h2 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+/*banner btn*/
+.btn-header:hover {
+  color: var(--main-white) !important;
+}
+
+/*banner btn*/
+.content-divider {
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    var(--clr-primary-light)
+  );
+  height: 1rem;
+  width: 100%;
+}
+/* col icon*/
+.col-icon {
+  font-size: 3rem;
+  color: var(--clr-primary);
+}
+/* skills*/
+.bg-secondary {
+  background: #e0e0e2 !important;
+}
+
+/*nav*/
+.nav-list {
+  list-style-type: none;
+}
+
+.navbar {
+  height: 100vh;
+  width: 100%;
+  transform: translateX(-100%);
+  z-index: 2;
+  background: grey;
+  position: fixed;
+  transition: all, 0.7s ease-in-out;
+}
+.showNav {
+  transform: translateX(0);
+}
+.open-nav {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.nav-link {
+  color: black;
+  font-size: 2rem;
+}
+
+ul {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+}
+.close-nav {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: white;
+  background: var(--clr-primary);
+}
+/* skills*/
+.skill-box:hover {
+  box-shadow: 0px 3px;
+  background: white;
+}
+
+.skill-box {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+..col-icon {
+  transition: all 0.4s linear;
+}
+.skill-box:hover .col-icon {
+  transform: translateY(-10px);
+  margin-top: 3px;
+}
+
+.about-img {
+  border: 7px solid var(--clr-primary);
+}
+.about-col-header {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary-light);
+}
+.col-content-img {
+  overflow: hidden;
+}
+
+.col-content-img:hover .about-img {
+  opacity: 0.8;
+  transform: scale(1.3);
+}
+.about-img {
+  transition: all 0.5s linear;
+}
+
+.imgss {
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.f {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: var(--clr-primary);
+  border-radius: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, 50%);
+  color: var(--clr-primary-light);
+  border: 8px solid white;
+}
+.img-cont {
+  position: relative;
+}
+
+.contact-icon {
+  color: var(--clr-primary);
+}
